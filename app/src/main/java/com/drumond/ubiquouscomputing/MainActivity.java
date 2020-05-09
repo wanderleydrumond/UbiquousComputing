@@ -41,15 +41,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onGroupExpand(int groupPosition) {
                 Toast.makeText(MainActivity.this, "Group: " + groupPosition + " opened", Toast.LENGTH_SHORT).show();
-                /*if (groupPosition == 0) {
-                    Toast.makeText(MainActivity.this, location + " opened", Toast.LENGTH_SHORT).show();
-                } else {
-                    if (groupPosition == 1) {
-                        Toast.makeText(MainActivity.this, accelerometer + " opened", Toast.LENGTH_SHORT).show();
-                    } else {
-                        Toast.makeText(MainActivity.this, deviceSensors + " opened", Toast.LENGTH_SHORT).show();
-                    }
-                }*/
             }
         });
 
@@ -60,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        expandableListView.setGroupIndicator(getResources().getDrawable(R.drawable.icon_group));
         expandableListView.setGroupIndicator(ResourcesCompat.getDrawable(getResources(), R.drawable.icon_group, null));
     }
 
@@ -88,10 +78,9 @@ public class MainActivity extends AppCompatActivity {
         listGroup.add(location);
         listGroup.add(accelerometer);
         listGroup.add(deviceSensors);
-        listGroup.add("Group 4");
 
         //ITEM
-        List<String> auxiliaryList= new ArrayList<>();
+        List<String> auxiliaryList = new ArrayList<>();
         auxiliaryList.add(latitude);
         auxiliaryList.add(longitude);
         auxiliaryList.add(altitude);
@@ -107,12 +96,5 @@ public class MainActivity extends AppCompatActivity {
         auxiliaryList= new ArrayList<>();
         auxiliaryList.add(sensorsList);
         listData.put(listGroup.get(2), auxiliaryList);
-
-        auxiliaryList= new ArrayList<>();
-        auxiliaryList.add("Item 13");
-        auxiliaryList.add("Item 14");
-        auxiliaryList.add("Item 15");
-        auxiliaryList.add("Item 16");
-        listData.put(listGroup.get(3), auxiliaryList);
     }
 }
