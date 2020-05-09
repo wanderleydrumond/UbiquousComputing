@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="backgroundHeaderListViewLight">#7D222B</color>
+    <color name="backgroundHeaderListViewDark">#82DDD4</color>
+
+    <color name="backgroundItemListViewLight">#BFBFBF</color>
+    <color name="backgroundItemListViewDark">#545454</color>
+
+    <color name="headerListViewLight">#FFFFFF</color>
+    <color name="headerListViewDark">#000000</color>
+
+    <color name="itemTextListViewLight">#323232</color>
+    <color name="itemTextListViewDark">#DDDDDD</color>
+</resources>

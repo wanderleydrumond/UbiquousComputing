@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="imageViewMargin">10dp</dimen>
+
+    <dimen name="headerListViewPadding">3dp</dimen>
+    <dimen name="headerListViewMargin">40dp</dimen>
+    <dimen name="itemListViewMargin">50dp</dimen>
+</resources>

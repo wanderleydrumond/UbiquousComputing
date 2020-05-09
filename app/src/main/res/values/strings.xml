@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Ubiquous Computing</string>
+    <string name="elv_h_location">Location</string>
+    <string name="elv_i_latitude">Latitude</string>
+    <string name="elv_i_longitude">Longitude</string>
+    <string name="elv_i_altitude">Altitude</string>
+    <string name="elv_i_address">Address</string>
+    <string name="elv_h_accelerometer">Accelerometer</string>
+    <string name="elv_i_xaxis">X Axis</string>
+    <string name="elv_i_yaxis">Y Axis</string>
+    <string name="elv_i_zaxis">Z Axis</string>
+    <string name="elv_h_devicesensors">Device Sensors</string>
+    <string name="elv_i_sensorslist">Sensors List</string>
+</resources>
