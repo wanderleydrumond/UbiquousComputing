@@ -23,7 +23,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         buildList();
+        manipulateExpandablelistView();
+    }
 
+    public void manipulateExpandablelistView() {
         ExpandableListView expandableListView = findViewById(R.id.elv_expandableListView);
         expandableListView.setAdapter(new ExpandableAdapter(MainActivity.this, listGroup, listData));
 
@@ -38,6 +41,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onGroupExpand(int groupPosition) {
                 Toast.makeText(MainActivity.this, "Group: " + groupPosition + " opened", Toast.LENGTH_SHORT).show();
+                /*if (groupPosition == 0) {
+                    Toast.makeText(MainActivity.this, location + " opened", Toast.LENGTH_SHORT).show();
+                } else {
+                    if (groupPosition == 1) {
+                        Toast.makeText(MainActivity.this, accelerometer + " opened", Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(MainActivity.this, deviceSensors + " opened", Toast.LENGTH_SHORT).show();
+                    }
+                }*/
             }
         });
 
