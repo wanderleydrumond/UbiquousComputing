@@ -23,10 +23,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         buildList();
-        manipulateExpandablelistView();
+        manipulateExpandableListView();
     }
 
-    public void manipulateExpandablelistView() {
+    public void manipulateExpandableListView() {
         ExpandableListView expandableListView = findViewById(R.id.elv_expandableListView);
         expandableListView.setAdapter(new ExpandableAdapter(MainActivity.this, listGroup, listData));
 
