@@ -15,13 +15,21 @@
         android:src="@drawable/logo_isec_light"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="@dimen/imageViewMargin"
-        android:layout_marginBottom="@dimen/imageViewMargin"/>
-
+        android:layout_marginBottom="@dimen/imageViewMargin"
+        android:contentDescription="@string/todo" />
 
     <ExpandableListView
         android:id="@+id/elv_expandableListView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_weight="1"/>
+
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/progressBar"/>
 
 </LinearLayout>

@@ -5,4 +5,5 @@
     <dimen name="headerListViewPadding">3dp</dimen>
     <dimen name="headerListViewMargin">40dp</dimen>
     <dimen name="itemListViewMargin">50dp</dimen>
+    <dimen name="progressBar">15dp</dimen>
 </resources>

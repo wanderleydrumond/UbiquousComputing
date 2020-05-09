@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
 
 import android.os.Bundle;
+import android.support.v4.os.ResultReceiver;
 import android.view.View;
 import android.widget.ExpandableListView;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -14,6 +16,11 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    //Location variables
+    private static final int REQUEST_CODE_PERMISSION = 1;
+    private ProgressBar pbLoading;
+    private ResultReceiver resultReceiver;
+    //ExpandableListView variables
     private List<String> listGroup;
     private HashMap<String, List<String>> listData;
 
@@ -24,6 +31,11 @@ public class MainActivity extends AppCompatActivity {
 
         buildList();
         manipulateExpandableListView();
+        initialise();
+    }
+
+    private void initialise() {
+        pbLoading = findViewById(R.id.pb_loading);
     }
 
     public void manipulateExpandableListView() {
@@ -33,14 +45,19 @@ public class MainActivity extends AppCompatActivity {
         expandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
             @Override
             public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
-                Toast.makeText(MainActivity.this, "Group: " + groupPosition + " | Item: " + childPosition, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Group: " + groupPosition + " | Item: " + childPosition, Toast.LENGTH_SHORT).show();
                 return false;
             }
         });
         expandableListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
             @Override
             public void onGroupExpand(int groupPosition) {
-                Toast.makeText(MainActivity.this, "Group: " + groupPosition + " opened", Toast.LENGTH_SHORT).show();
+                String on = getResources().getString(R.string.on);
+                String accelerometer = getResources().getString(R.string.elv_h_accelerometer);
+                    if (groupPosition == 0)
+                        Toast.makeText(MainActivity.this, "GPS " + on, Toast.LENGTH_SHORT).show();
+                    else if (groupPosition == 1)
+                        Toast.makeText(MainActivity.this, accelerometer + " " + on, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -54,11 +71,12 @@ public class MainActivity extends AppCompatActivity {
         expandableListView.setGroupIndicator(ResourcesCompat.getDrawable(getResources(), R.drawable.icon_group, null));
     }
 
+    //Load Expandable list View Resource values
     public void buildList() {
         listGroup = new ArrayList<>();
         listData = new HashMap<>();
 
-        //    Resources
+        //Resources
         String location = getResources().getString(R.string.elv_h_location);
         String accelerometer = getResources().getString(R.string.elv_h_accelerometer);
         String deviceSensors = getResources().getString(R.string.elv_h_devicesensors);
