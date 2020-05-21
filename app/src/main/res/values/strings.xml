@@ -11,7 +11,13 @@
     <string name="elv_i_zaxis">Z Axis</string>
     <string name="elv_h_devicesensors">Device Sensors</string>
     <string name="elv_i_sensorslist">Sensors List</string>
-    <string name="todo">TODO</string>
+    <string name="iv_d_logo">ISEC logo</string>
     <string name="on">ON</string>
     <string name="off">OFF</string>
+    <string name="valueLatitude">Latitude Value</string>
+    <string name="valueLongitude">Longitude Value</string>
+    <string name="valueAltitude">Altitude Value</string>
+    <string name="valueXAxis">X Axis value</string>
+    <string name="valueYAxis">Y Axis Value</string>
+    <string name="valueZAxis">Z Axis Value</string>
 </resources>

@@ -16,7 +16,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="@dimen/imageViewMargin"
         android:layout_marginBottom="@dimen/imageViewMargin"
-        android:contentDescription="@string/todo" />
+        android:contentDescription="@string/iv_d_logo" />
 
     <ExpandableListView
         android:id="@+id/elv_expandableListView"

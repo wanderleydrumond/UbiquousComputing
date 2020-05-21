@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Ubiquous Computing</string>
+    <string name="app_name">Computação Ubíqua</string>
     <string name="elv_h_location">Localização</string>
     <string name="elv_i_latitude">Latitude</string>
     <string name="elv_i_longitude">Longitude</string>
@@ -12,7 +12,13 @@
     <string name="elv_i_zaxis">Eixo Z</string>
     <string name="elv_h_devicesensors">Sensores do Dispositivo</string>
     <string name="elv_i_sensorslist">Lista de Sensores</string>
-    <string name="todo">POR FAZER</string>
+    <string name="iv_d_logo">Logomarca do ISEC</string>
     <string name="on">Ligado</string>
     <string name="off">Desligado</string>
+    <string name="valueLatitude">Valor da Latitude</string>
+    <string name="valueLongitude">Valor da Longitude</string>
+    <string name="valueAltitude">Valor da Altitude</string>
+    <string name="valueXAxis">Valor do Eixo X</string>
+    <string name="valueYAxis">Valor do Eixo Y</string>
+    <string name="valueZAxis">Valor do Eixo Z</string>
 </resources>
